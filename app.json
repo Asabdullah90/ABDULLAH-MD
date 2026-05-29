@@ -1,0 +1,21 @@
+{
+  "name": "ABDULLAH-MD",
+  "description": "ABDULLAH-MD WhatsApp bot made by ABDULLAH official",
+  "logo": "https://ibb.co/yBFzd53M",
+  "keywords": ["bot","Abdullah-MD","Abdullah-MD"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+        "description": "Put the Abdullah-MD session-id here.",
+        "required": true
+    }
+},
+
+"buildpacks": [
+    {
+        "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+],
+"stack": "heroku-24"
+}
