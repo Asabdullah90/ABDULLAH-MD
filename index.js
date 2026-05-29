@@ -72,10 +72,7 @@ if (!fs.existsSync(CREDS)) {
     process.exit(1);
   }
   
-  let session = config.SESSION_ID.trim();
-  if (!session.includes("ABDULLAH-MD~")) {
-    console.log("❌ Invalid ABDULLAH-MD session format");
-    process.exit(1);
+  
   }
   
   const decoded = Buffer.from(session.substring(7), 'base64').toString('utf8');
